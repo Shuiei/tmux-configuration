@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "rdbg",
+      "name": "Attach with rdbg",
+      "request": "attach"
+    },
+    {
+      "type": "rdbg",
+      "name": "Debug RSpec current file",
+      "request": "launch",
+      "script": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "${relativeFile}"
+      ],
+      "useBundler": true,
+      "showDebuggerOutput": true
+    },
+    {
+      "type": "rdbg",
+      "name": "Debug RSpec (file:line)",
+      "request": "launch",
+      "script": "${workspaceRoot}/bin/rspec",
+      "args": [
+        "${relativeFile}:${lineNumber}"
+      ],
+      "useBundler": true,
+      "showDebuggerOutput": true
+    }
+  ]
+}

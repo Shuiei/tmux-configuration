@@ -1,0 +1,10 @@
+{
+  "rubyLsp.formatter": "standard",
+  "rubyLsp.indexing": {
+    "excludedPatterns": ["**/test/**/*.rb"],
+    "includedPatterns": ["**/bin/**/*"],
+    "excludedGems": ["rubocop", "rubocop-performance"],
+    "excludedMagicComments": ["compiled:true"],
+  },
+  "editor.formatOnSave": true,
+}
